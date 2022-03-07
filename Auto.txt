@@ -1,0 +1,18 @@
+Modellizzare la struttura di una tabella per memorizzare tutti i dati riguardanti delle auto usate messe in vendita da un concessionario.
+
+AUTO_USATE
+
+id                      - bigint            - UNIIQUE - AUTO_INCREMENT - NOTNULL (PRIMARY KEY)
+marca                   - varchar(20)       - NOTNULL
+modello                 - varchar(20)       - NOTNULL
+immatricolazione        - date              - NOTNULL
+chilometraggio          - double(8,2)       - NOTNULL
+stato                   - tinyint           - NOTNULL
+optional                - tinyint(1)        - NULL
+vernice-orginal         - tinyint(1)        - NULL
+prezzo                  - double(7,2)       - NOTNULL
+carburante              - varchar(10)       - NOTNULL
+cambio_automatico       - tinyint(1)        - NOTNULL
+ex_proprietari          - tinyint()         - NULL
+storico                 - text              - NULL - UNIQUE
+targa                   - char(7)           - UNIQUE - NOTNULL
